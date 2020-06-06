@@ -37,13 +37,11 @@ console.log(getFinals(fifaData));
 /* Task 3: Implement a higher-order function called `getYears` that accepts the callback function `getFinals`, and returns an array called `years` containing all of the years in the dataset */
 
 function getYears(cb) {
-    let yearsList = cb.map(cb.Year)
-    return getFinals.Year
+    const getYears = cb.map((years)=>{
+    return years.Year })
+    return getYears 
 }
-// const getYears = getFinals.map((years)=>{
-//     return years.Year;
-// });
-console.log(getYears(getFinals));
+console.log(getYears(getFinals(fifaData)));
 
 // getYears();
 
